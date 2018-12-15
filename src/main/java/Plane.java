@@ -26,4 +26,11 @@ public class Plane {
         passengers.remove(passenger);
         passenger.setOnPlane(false);
     }
+
+    public void clearPassengers() {
+        for (Passenger passenger : passengers) {
+            passenger.setOnPlane(false);
+        }
+        passengers.clear();
+    }
 }

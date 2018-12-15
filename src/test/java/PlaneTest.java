@@ -60,9 +60,18 @@ public class PlaneTest {
         assertFalse(robbie.isOnPlane());
     }
 
-//    @Test
-//    public void canClearPassengers() {
-//
-//    }
+    @Test
+    public void canClearPassengers() {
+        chopper.addPassenger(robbie);
+        chopper.addPassenger(charlotte);
+        assertEquals(2, chopper.countPassengers());
+        assertTrue(charlotte.isOnPlane());
+        assertTrue(robbie.isOnPlane());
+        chopper.clearPassengers();
+        assertEquals(0, chopper.countPassengers());
+        assertFalse(charlotte.isOnPlane());
+        assertFalse(robbie.isOnPlane());
+
+    }
 
 }
