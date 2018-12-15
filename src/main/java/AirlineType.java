@@ -1,0 +1,6 @@
+public enum AirlineType {
+    GLASGOW_BUDGET_AIRLINES,
+    HIGHLAND_FLYERS,
+    ROBBIEJET,
+    WINGING_IT_AIRLINES;
+}
