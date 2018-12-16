@@ -3,7 +3,7 @@ public class Flight {
     private int flightNumber;
     private DestinationType destination;
     private int maxPassengers;
-    private float ticketPrice;
+    private double ticketPrice;
     private boolean inProgress;
 
     public Flight(
@@ -11,7 +11,7 @@ public class Flight {
             int flightNumber,
             DestinationType destination,
             int maxPassengers,
-            float ticketPrice
+            double ticketPrice
     ) {
         this.plane = plane;
         this.flightNumber = flightNumber;
@@ -25,11 +25,19 @@ public class Flight {
         return plane;
     }
 
+    public int getFlightNumber() {
+        return flightNumber;
+    }
+
+    public DestinationType getDestination() {
+        return destination;
+    }
+
     public int getMaxPassengers() {
         return maxPassengers;
     }
 
-    public float getTicketPrice() {
+    public double getTicketPrice() {
         return ticketPrice;
     }
 

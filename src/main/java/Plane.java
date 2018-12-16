@@ -11,6 +11,14 @@ public class Plane {
         this.passengers = new ArrayList<>();
     }
 
+    public PlaneType getType() {
+        return type;
+    }
+
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
     public int countPassengers() {
         return passengers.size();
     }
